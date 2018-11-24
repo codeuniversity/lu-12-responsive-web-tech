@@ -4,7 +4,7 @@ This repository accompanies the exercises from the Learning Unit 12 Responsive W
 
 ## Setup
 
-### If you don't have Node.js, install it first via [nodejs.org](https://nodejs.org/.
+### If you don't have Node.js, install it first via [nodejs.org](https://nodejs.org/).
 
 ### If you don't have [Gulp](https://gulpjs.com/), install it via npm:
 
