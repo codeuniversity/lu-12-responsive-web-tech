@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+nav {
+  margin: 13px 0;
+}
+
+nav a {
+  display: inline-block;
+  padding: 5px 13px;
+  color: mediumseagreen;
+}
+
+main {
+  margin: 0 30px;
+}

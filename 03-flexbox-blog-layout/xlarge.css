@@ -1,0 +1,46 @@
+@media screen and (min-width: 80em) {
+  .articles {
+  }
+
+  .article {
+    flex-basis: calc(25% - 32px);
+    margin: 0 15px 60px 15px;
+  }
+
+  .article--featured {
+    flex-basis: calc(50% - 32px);
+    position: relative;
+    left: 25%;
+    overflow: hidden;
+  }
+
+  .article:nth-child(2) {
+    position: relative;
+    left: -50%;
+  }
+
+  .article--featured .article__picture img {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+  }
+
+  .article--featured .article__content {
+    position: absolute;
+    left: 0;
+    margin-top: 0;
+    bottom: 0px;
+    border: none;
+    width: 40%;
+  }
+
+  .article--featured .article__excerpt {
+    height: 42px;
+    overflow: hidden;
+  }
+}

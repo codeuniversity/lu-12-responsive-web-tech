@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>CSS LU_12</title>
+    <meta charset="UTF-8" />
+    <link href="../shared.css" type="text/css" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+    <main>
+      <nav>
+        <a href="../index.html">« Home</a>
+      </nav>
+
+      <h1>&lt;picture&gt; tag</h1>
+
+      <h2>example 1 — basic</h2>
+      <ul>
+        <li>default: 320 x 320</li>
+        <li>between 480 and 640 px viewport width: 640 x 640</li>
+        <li>above 640 px viewport width: 960 x 960</li>
+      </ul>
+
+      <picture>
+        <source
+          media="(min-width: 480px) and (max-width: 640px)"
+          srcset="/04-responsive-images/images/image-640x640.png"
+        />
+        <source
+          media="(min-width: 640px)"
+          srcset="/04-responsive-images/images/image-960x960.png"
+        />
+        <img src="/04-responsive-images/images/image-320x320.png" />
+      </picture>
+
+      <h2>example 2 — art direction</h2>
+      <ul>
+        <li>default: 320 x 320</li>
+        <li>above 480 px viewport width and landscape format: 852 x 640</li>
+        <li>above 480 px viewport width and portrait format: 640 x 852</li>
+      </ul>
+      <picture>
+        <source
+          media="(min-width: 480px) and (orientation: portrait)"
+          srcset="/04-responsive-images/images/image-640x852.png"
+        />
+        <source
+          media="(min-width: 480px) and (orientation: landscape)"
+          srcset="/04-responsive-images/images/image-852x640.png"
+        />
+        <img src="/04-responsive-images/images/image-320x320.png" />
+      </picture>
+    </main>
+  </body>
+</html>

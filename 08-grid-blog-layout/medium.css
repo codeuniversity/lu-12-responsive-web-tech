@@ -1,0 +1,13 @@
+@media screen and (min-width: 40em) {
+  .articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 60px 30px;
+    margin: 0 15px;
+  }
+
+  .article {
+    margin: 0;
+  }
+}
