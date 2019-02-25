@@ -4,7 +4,8 @@ body {
 }
 
 nav {
-  margin: 13px 0;
+  display: block;
+  margin: 13px 13px 34px 13px;
 }
 
 nav a {
@@ -14,5 +15,5 @@ nav a {
 }
 
 main {
-  margin: 0 30px;
+  /*margin: 0 30px;*/
 }

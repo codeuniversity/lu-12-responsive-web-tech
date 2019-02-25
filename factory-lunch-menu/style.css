@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+nav a {
+  color: #000;
+}
+
+p {
+  margin: 0;
+}
+
+.layout {
+  margin: 0 30px;
+}
+
+.header {
+  margin-bottom: 50px;
+}
+
+.header__figure {
+  margin: 0 0 30px 0;
+}
+
+.header__logo--medium {
+  display: none;
+}
+
+.header__title {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-style: italic;
+  color: #e26159;
+}
+
+.header__divider {
+  display: block;
+  margin: 15px 0;
+  width: 60px;
+  height: 1px;
+  background-color: #e26159;
+  border: none;
+}
+
+.header__text {
+}
+
+.dish {
+  margin-bottom: 40px;
+}
+
+.dish__day {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #e26159;
+}
+
+.dish__divider {
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  background-color: #e26159;
+  border: none;
+}
+
+.dish__title {
+  margin: 10px 0 3px 0;
+}
+
+.dish__additives {
+  margin: 0 0 10px 0;
+  font-size: 12px;
+}
+
+.dish__tags {
+  margin: 0 0 10px 0;
+}
+
+.dish__tag {
+  color: #e26159;
+}
+
+.dish__tag::before {
+  content: '#';
+}
+
+.dish__price::after {
+  content: '\20AC';
+  margin-left: 3px;
+  font-size: 0.8em;
+}
+
+@media (min-width: 640px) {
+  body {
+    color: #fff;
+    background-color: #e26159;
+    font-size: 20px;
+  }
+
+  .layout {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .header {
+    margin-bottom: 50px;
+  }
+
+  .header__figure {
+    margin: 0 0 50px 0;
+  }
+
+  .header__logo--small {
+    display: none;
+  }
+
+  .header__logo--medium {
+    display: block;
+  }
+
+  .header__title {
+    font-size: 1em;
+    color: #000;
+  }
+
+  .header__divider {
+    width: 80px;
+    height: 2px;
+    background-color: #000;
+  }
+
+  .header__text {
+  }
+
+  .dish {
+    margin-bottom: 50px;
+  }
+
+  .dish__day {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    color: #000;
+  }
+
+  .dish__divider {
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+  }
+
+  .dish__title {
+    margin: 10px 0 3px 0;
+  }
+
+  .dish__additives {
+    margin: 0 0 10px 0;
+    font-size: 13px;
+  }
+
+  .dish__tags {
+    margin: 0 0 10px 0;
+  }
+
+  .dish__tag {
+    color: #000;
+  }
+}
+
+@media (min-width: 800px) {
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .header__figure {
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+  }
+}
