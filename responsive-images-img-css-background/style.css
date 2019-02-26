@@ -1,0 +1,50 @@
+.column {
+  width: 50%;
+  float: left;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+.img-medium,
+.img-large {
+  display: none;
+}
+
+.bg-image {
+  height: calc(416 / 800 * 50vw); /* calculates correct container height based on image dimensions */
+  background: url('images/code-02-small.jpg') no-repeat center;
+  background-size: cover;
+}
+
+@media (min-width: 640px) {
+  .img-medium {
+    display: block;
+  }
+
+  .img-small,
+  .img-large {
+    display: none;
+  }
+
+  .bg-image {
+    background-image: url('images/code-02-medium.jpg');
+  }
+}
+
+@media (min-width: 1024px) {
+  .img-large {
+    display: block;
+  }
+
+  .img-small,
+  .img-medium {
+    display: none;
+  }
+
+  .bg-image {
+    background-image: url('images/code-02-large.jpg');
+  }
+}
