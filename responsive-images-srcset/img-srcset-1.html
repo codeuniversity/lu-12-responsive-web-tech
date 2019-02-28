@@ -17,32 +17,45 @@
       <h2>1 — only densities supplied</h2>
 
       <img
-          srcset="images/image-320x320.png 1x, images/image-640x640.png 2x, images/image-960x960.png 3x"
+          srcset="
+          images/image-320x320.png,
+          images/image-640x640.png 2x,
+          images/image-960x960.png 3x
+          "
           src="images/image-320x320.png"
+          alt=""
       >
 
-      <h2>widths of images supplied</h2>
+      <h2>2 — widths of images supplied</h2>
 
       <img
         srcset="
           images/image-640x640.png 640w,
           images/image-960x960.png 960w
-        "
+          "
         src="images/image-320x320.png"
         alt=""
-      />
+      >
 
-      <h2>relative resolutions of images supplied</h2>
+      <h2>3 — widths of images supplied + sizes</h2>
 
       <img
-        srcset="
-          images/image-320x320.png,
-          images/image-640x640.png 2x,
-          images/image-960x960.png 3x
-        "
-        src="images/image-320x320.png"
-        alt=""
-      />
+          srcset="
+          images/image-640x640.png 640w,
+          images/image-960x960.png 960w
+          "
+          src="images/image-320x320.png"
+          sizes="
+          (min-width: 640px) and (max-width: 900px) 50vw,
+          (min-width: 900px) 300px,
+          100vw
+          "
+          alt=""
+      >
+      <!-- important! -->
+      <!-- browser will select THE 1ST sizes condition that's satisfied -->
+      <!-- use px, em, rem, calc as unit in sizes, but % will not work -->
+
     </main>
   </body>
 </html>
