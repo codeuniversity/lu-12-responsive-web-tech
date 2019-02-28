@@ -14,14 +14,21 @@
 
       <h1>img and srcset with widths vs. 2x, 3x</h1>
 
+      <h2>only densities supplied</h2>
+
+      <img
+          srcset="images/image-320x320.png 1x, images/image-640x640.png 2x, images/image-960x960.png 3x"
+          src="images/image-320x320.png"
+      >
+
       <h2>widths of images supplied</h2>
 
       <img
         srcset="
-          /responsive-images-srcset/images/image-640x640.png 640w,
-          /responsive-images-srcset/images/image-960x960.png 960w
+          images/image-640x640.png 640w,
+          images/image-960x960.png 960w
         "
-        src="/responsive-images-srcset/images/image-320x320.png"
+        src="images/image-320x320.png"
         alt=""
       />
 
@@ -29,11 +36,11 @@
 
       <img
         srcset="
-          /responsive-images-srcset/images/image-320x320.png,
-          /responsive-images-srcset/images/image-640x640.png 2x,
-          /responsive-images-srcset/images/image-960x960.png 3x
+          images/image-320x320.png,
+          images/image-640x640.png 2x,
+          images/image-960x960.png 3x
         "
-        src="/responsive-images-srcset/images/image-320x320.png"
+        src="images/image-320x320.png"
         alt=""
       />
     </main>
