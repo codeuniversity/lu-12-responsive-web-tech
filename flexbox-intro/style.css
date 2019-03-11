@@ -35,7 +35,7 @@ main {
   position: relative;
   padding: 15px;
   background: rgb(30,30,30);
-  margin: 0 2px;
+  margin: 2px;
 }
 
 .box:before {
