@@ -10,13 +10,12 @@
   .article--featured {
     flex-basis: calc(50% - 32px);
     position: relative;
-    left: 25%;
     overflow: hidden;
   }
 
   .article:nth-child(2) {
     position: relative;
-    left: -50%;
+    order: -1;
   }
 
   .article--featured .article__picture img {
