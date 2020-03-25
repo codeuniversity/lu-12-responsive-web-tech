@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@623&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
   margin: 0;
-  font-family: Georgia, serif;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: 16px;
+  font-variation-settings: 'wdth' 50, 'wght' 100;
 }
 
 nav {
@@ -37,12 +50,35 @@ main {
   text-decoration: none;
 }
 
+.item__link:hover {
+  /*transform: translateY(-50%);*/
+}
+
 .item__author {
   margin: 0;
   font-size: 1em;
 }
 
+@media (min-width: 480px) {
+  body {
+    font-variation-settings: 'wdth' 60, 'wght' 300;
+  }
+}
+
 @media (min-width: 640px) {
+
+  body {
+    font-variation-settings: 'wdth' 70, 'wght' 500;
+    background: #F5F4EB;
+  }
+
+  .intro {
+    max-width: 480px;
+  }
+
+  .grid {
+    margin: 64px 0 0 0;
+  }
 
   /* this is your base rectangle */
   .rectangle {
@@ -72,6 +108,11 @@ main {
     padding-bottom: calc(100% / 13 * 5);
   }
 
+  /* for 2:7 format */
+  .rectangle-2-7 {
+    padding-bottom: calc(100% / 2 * 7);
+  }
+
   /* for square format */
   .square {
     padding-bottom: 100%;
@@ -80,6 +121,7 @@ main {
   /* this makes item go next to each other */
   .item {
     float: left;
+    margin: 0 24px 40px 0;
   }
 
   /* this covers your chosen rectangle with the image */
@@ -92,15 +134,54 @@ main {
 
   /* Add different properties for items here, e. g. width, height, padding or try & see what happens! */
   .item-a {
-    width: 50%;
+    width: 55%;
+  }
+
+  .item-a .item__link {
+    font-size: 3.4em;
   }
 
   .item-b {
+    width: 34%;
+  }
+
+  .item-b .item__link {
+    font-size: 2.1em;
   }
 
   .item-c {
+    width: 21%;
+  }
+
+  .item-3 .item__link {
+    font-size: 1.3em;
   }
 
   .item-d {
+    width: 13%;
+  }
+}
+
+@media (min-width: 720px) {
+  body {
+    font-variation-settings: 'wdth' 80, 'wght' 600;
+  }
+}
+
+@media (min-width: 960px) {
+  body {
+    font-variation-settings: 'wdth' 90, 'wght' 750;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    font-variation-settings: 'wdth' 90, 'wght' 800;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    font-variation-settings: 'wdth' 100, 'wght' 900;
   }
 }
