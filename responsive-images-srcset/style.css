@@ -7,3 +7,19 @@ img {
   border: 1px solid lightslategray;
   margin-bottom: 30px;
 }
+
+#img-3 {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+  #img-3 {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #img-3 {
+    width: 33%;
+  }
+}
