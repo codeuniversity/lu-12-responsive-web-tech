@@ -12,19 +12,111 @@
   </nav>
 
   <main>
-    <h2>Flex 💪 playground</h2>
+    <section>
+      <h2>Flex 💪 playground</h2>
 
-    <div class="box-list">
+      <div class="box-list">
 
-      <div class="box box-1"><h1>1</h1></div>
-      <div class="box box-2"><h1>2</h1></div>
-      <div class="box box-3"><h1>3</h1></div>
-      <!--<div class="box box-4"><h1>4</h1></div>-->
-      <!--<div class="box box-5"><h1>5</h1></div>-->
-      <!--<div class="box box-6"><h1>6</h1></div>-->
+        <div class="box box-1"><h1>1</h1></div>
+        <div class="box box-2"><h1>2</h1></div>
+        <div class="box box-3"><h1>3</h1></div>
+        <!--<div class="box box-4"><h1>4</h1></div>-->
+        <!--<div class="box box-5"><h1>5</h1></div>-->
+        <!--<div class="box box-6"><h1>6</h1></div>-->
 
-    </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>flex-basis, flex-grow and flex-shrink</h2>
+
+      <div class="container-dims">&nbsp;</div>
+      <div class="box-list-fb box-list-fb-1">
+        <div class="box-fb box-fb-1">
+          <div class="props">
+            flex-basis: 50%<br>
+            flex-grow: 0<br>
+            flex-shrink: 1<br>
+            <div class="box-fb-dims"></div>
+          </div>
+        </div>
+        <div class="box-fb box-fb-2">
+          <div class="props">
+            flex-basis: 50%<br>
+            flex-grow: 0<br>
+            flex-shrink: 1<br>
+            <div class="box-fb-dims"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-dims">&nbsp;</div>
+      <div class="box-list-fb box-list-fb-2">
+        <div class="box-fb box-fb-3">
+          <div class="props">
+            flex-basis: 640 px<br>
+            flex-grow: 0<br>
+            flex-shrink: 1<br>
+            <div class="box-fb-dims"></div>
+          </div>
+        </div>
+        <div class="box-fb box-fb-4">
+          <div class="props">
+            flex-basis: 50%<br>
+            flex-grow: 0<br>
+            flex-shrink: 1<br>
+            <div class="box-fb-dims"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-dims">&nbsp;</div>
+      <div class="box-list-fb box-list-fb-3">
+        <div class="box-fb box-fb-5">
+          <div class="props">
+            flex-basis: 640 px<br>
+            flex-grow: 1<br>
+            flex-shrink: 1<br>
+            <div class="box-fb-dims"></div>
+          </div>
+        </div>
+        <div class="box-fb box-fb-6">
+          <div class="props">
+            flex-basis: 50%<br>
+            flex-grow: 1<br>
+            flex-shrink: 2<br>
+            <div class="box-fb-dims"></div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
 </body>
+
+<script>
+  function calcDims() {
+    let container_dims = document.getElementsByClassName('container-dims');
+    for (i=0; i < container_dims.length; i++) {
+      let w = container_dims[i].getBoundingClientRect().width.toFixed(1);
+      let h = container_dims[i].getBoundingClientRect().height.toFixed(1);
+      container_dims[i].innerHTML = 'Container dims ' + w + ' × ' + h;
+    }
+
+    let dims = document.getElementsByClassName('box-fb-dims');
+    for (i=0; i < dims.length; i++) {
+      let w = dims[i].parentElement.parentElement.getBoundingClientRect().width.toFixed(1);
+      let h = dims[i].parentElement.parentElement.getBoundingClientRect().height.toFixed(1);
+      dims[i].innerHTML = w + ' × ' + h;
+    }
+  }
+
+  window.addEventListener('resize', calcDims);
+  window.addEventListener('load', calcDims);
+</script>
+
 </html>

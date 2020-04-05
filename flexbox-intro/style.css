@@ -71,3 +71,51 @@ main {
   mix-blend-mode: soft-light;
 }
 
+.box-list-fb {
+  display: flex;
+  /*flex-direction: column;*/
+}
+
+.box-fb {
+}
+
+.props {
+  margin: 25px;
+}
+
+.box-fb-1 {
+  flex-basis: 50%;
+  background-color: powderblue;
+}
+
+
+.box-fb-2 {
+  flex-basis: 50%;
+  background-color: darkseagreen;
+}
+
+.box-fb-3 {
+  flex-basis: 640px;
+  background-color: powderblue;
+}
+
+
+.box-fb-4 {
+  flex-basis: 50%;
+  background-color: darkseagreen;
+}
+
+.box-fb-5 {
+  flex-basis: 640px;
+  background-color: powderblue;
+  flex-grow: 1;
+}
+
+
+.box-fb-6 {
+  flex-basis: 50%;
+  background-color: darkseagreen;
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+
