@@ -106,7 +106,7 @@ main {
 }
 
 .box-fb-5 {
-  flex-basis: 640px;
+  flex-basis: 480px;
   background-color: powderblue;
   flex-grow: 1;
 }
