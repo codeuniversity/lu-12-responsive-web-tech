@@ -26,3 +26,6 @@ gulp
 
 ### Open browser on localhost:3000
 http://localhost:3000/
+
+### Public URL
+https://codeuniversity.github.io/lu-12-responsive-web-tech/
