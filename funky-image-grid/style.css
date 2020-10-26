@@ -118,7 +118,7 @@ main {
     padding-bottom: 100%;
   }
 
-  /* this makes item go next to each other */
+  /* this makes items go next to each other */
   .item {
     float: left;
     margin: 0 24px 40px 0;
