@@ -125,6 +125,7 @@ main {
   }
 
   /* this covers your chosen rectangle with the image */
+  /* if the image does not fit the given rectangle, it will be automatically centered and masked by the rectangle */
   .item__img {
     position: absolute;
     width: 100%;
