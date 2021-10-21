@@ -1,11 +1,25 @@
 html { /* equivalent to :root in HTML */
   --bg-color: #ccc;
   --text-color: #000;
+
+  color: var(--text-color);
   background: var(--bg-color);
+}
+
+main {
+  margin: 0 1rem;
 }
 
 h1 {
   color: var(--text-color);
+}
+
+#theme-selector {
+  display: inline-flex;
+}
+
+#theme-selector label {
+  margin-right: 1rem;
 }
 
 html.theme--dark {
@@ -13,9 +27,7 @@ html.theme--dark {
   --text-color: pink;
 }
 
-html.theme--dark h1 {
-}
-
 html.theme--funky {
   --bg-color: darkmagenta;
+  --text-color: magenta;
 }
