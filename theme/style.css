@@ -1,0 +1,21 @@
+html { /* equivalent to :root in HTML */
+  --bg-color: #ccc;
+  --text-color: #000;
+  background: var(--bg-color);
+}
+
+h1 {
+  color: var(--text-color);
+}
+
+html.theme--dark {
+  --bg-color: #111;
+  --text-color: pink;
+}
+
+html.theme--dark h1 {
+}
+
+html.theme--funky {
+  --bg-color: darkmagenta;
+}
