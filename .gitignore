@@ -1,2 +1,7 @@
 .idea
 node_modules
+.DS_Store
+flexbox-blog-layout/.DS_Store
+flexbox-blog-layout/images/.DS_Store
+funky-image-grid/.DS_Store
+responsive-images-img-css-background/.DS_Store
